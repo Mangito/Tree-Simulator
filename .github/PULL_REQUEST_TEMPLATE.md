@@ -24,4 +24,4 @@ N/A.
 
 ---
 
-Thank you for your contribution to Tree Simulator Game! Your effort is greatly appreciated; it helps improve this project for everyone. 😄🎮🚀
+Thank you for your contribution to Tree Simulator Game! Your effort is greatly appreciated; it helps to improve this project for everyone. 😄🎮🚀
