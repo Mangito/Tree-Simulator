@@ -1,13 +1,12 @@
-<!-- Read this before opening de PR: https://github.com/Mangito/FPS/wiki/ProjectBestPractices#pull-requests -->
+<!-- Read this before opening this PR: https://github.com/Mangito/Tree-Simulator/wiki/ProjectBestPractices#pull-requests -->
 
 ### Description
 
-<!-- Describe the purpose of this pull request.
-Provide a brief summary of the changes and why they are being made. -->
+N/A.
 
 ### Image/Video
 
-<!--- If applicable, include an image/gif/video to help illustrate the changes.  -->
+N/A.
 
 ### Related Issue
 
@@ -15,22 +14,14 @@ Closes #ISSUE_NUMBER
 
 ### Does this PR introduce a breaking change? ⚠️
 
-- [ ] No
-- [ ] Yes <!-- ::WARNING:: If your PR has a breaking change, your commit body message MUST include "BREAKING CHANGE" -->
+No.
 
-<!-- If this PR contains a breaking change, please describe the impact. -->
-
-### Tests
-
-- [ ] I tested all game E2E;
-- [ ] I just tested some scenes;
-- [ ] Not applicable.
-
+<!-- If "Yes", please describe the impact  -->
 
 ## Additional Notes
 
-<!-- Any additional information or context that might be helpful for the reviewers. -->
+N/A.
 
 ---
 
-Thank you for your contribution to FPS Game! Your effort is greatly appreciated, and it helps make this project better for everyone. 😄🎮🚀
+Thank you for your contribution to Tree Simulator Game! Your effort is greatly appreciated; it helps to improve this project for everyone. 😄🎮🚀
