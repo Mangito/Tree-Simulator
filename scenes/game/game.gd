@@ -1,5 +1,6 @@
 extends Node3D
 
+@onready var menu: CanvasLayer = $Menu
 @onready var player_level_status: VBoxContainer = $UI/PlayerLevelUI/PlayerLevelStatus
 @onready var tree_level_status: VBoxContainer = $UI/TreeLevelUI/LevelStatus
 @onready var tree_name: Label = $UI/TreeLevelUI/TreeName
@@ -8,6 +9,9 @@ extends Node3D
 func _ready() -> void:
 	_update_ui()
 	_populate_option_button()
+	
+	menu.visible = false
+	menu.setIsInGame(true)
 
 func _on_xp_timer_timeout() -> void:
 	PlayerLS.add_xp()
