@@ -15,6 +15,13 @@ run/main_scene="res://menus/main_menu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GameManager="*res://globals/GameManager.gd"
+Utils="*res://globals/Utils.gd"
+PlayerLS="*res://globals/LevelSystem/Player.gd"
+TreeLS="*res://globals/LevelSystem/Tree.gd"
+
 [display]
 
 window/size/viewport_width=1280
