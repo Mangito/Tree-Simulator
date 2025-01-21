@@ -7,13 +7,13 @@ var trees = {
 	"Tree2": {"xp": 0, "level": 1, "xpNextLevel": 100, "maxLevel": 10},
 	"Tree3": {"xp": 0, "level": 1, "xpNextLevel": 100, "maxLevel": 10},
 }
-var select = "Tree1"
+var selected = "Tree1"
 
 func get_select_tree():
-	return trees[select]
+	return trees[selected]
 
 func set_selected_tree(name: String) -> void:
-	select = name
+	selected = name
 
 func add_xp() -> void:
 	var tree = get_select_tree()
@@ -32,4 +32,4 @@ func _check_level_up() -> void:
 
 func _on_level_up() -> void:
 	var tree = get_select_tree()
-	print(select, " subiu de nível! Novo nível: ", tree["level"])
+	print(selected, " subiu de nível! Novo nível: ", tree["level"])

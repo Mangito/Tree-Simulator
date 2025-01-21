@@ -41,6 +41,8 @@ layout_mode = 2
 [node name="TreeSelector" type="OptionButton" parent="UI/TreeLevelUI"]
 layout_mode = 2
 selected = 0
+item_count = 2
+popup/item_1/id = 1
 
 [node name="XP_Timer" type="Timer" parent="."]
 autostart = true

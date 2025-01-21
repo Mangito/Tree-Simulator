@@ -13,6 +13,7 @@ func _on_xp_timer_timeout() -> void:
 	PlayerLS.add_xp()
 	TreeLS.add_xp()
 	_update_ui()
+	GameStorage.save_progress()
 
 func _update_ui() -> void:
 	var tree = TreeLS.get_select_tree()
