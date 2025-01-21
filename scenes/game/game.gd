@@ -21,16 +21,20 @@ func _update_ui() -> void:
 	tree_level_status.update_ui(tree["level"], tree["xp"], tree["xpNextLevel"])
 
 func _populate_option_button():
-	var TREES = GameManager.TREES
+	var TREES = TreeLS.trees
+	var selected = TreeLS.selected
 	
 	for key in TREES.keys():
-		var tree_data = TREES[key]
-		tree_selector.add_item(tree_data["name"], key)
+		var tree = TREES[key]
+		tree_selector.add_item(tree.name, tree.id)
+	
+	tree_selector.selected = TREES[selected].id
 
 func _on_option_button_item_selected(index: int) -> void:
-	var TREES = GameManager.TREES
-	var seletec = TREES[index]
+	var seletec = TreeLS.find_tree_by_id(index)
 	
-	TreeLS.set_selected_tree(seletec["id"])
-	tree_name.text = seletec["name"]
+	TreeLS.set_selected_tree(seletec.key)
+	tree_name.text = seletec.tree.name
+	
 	_update_ui()
+	GameStorage.save_progress()

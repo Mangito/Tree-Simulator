@@ -6,7 +6,7 @@ var xp = 0 # Current XP
 var level = 1 # Current Level
 var xpNextLevel = 100 # XP to the next level
 
-func get_data():
+func get_data() -> Dictionary:
 	var data = {
 		"xp": xp,
 		"level": level,
