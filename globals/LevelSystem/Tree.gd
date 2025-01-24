@@ -3,17 +3,24 @@ extends Node
 const XP_PER_SECOND: int = 5
 
 var trees = {
-	"Tree1": {"xp": 0, "level": 1, "xpNextLevel": 100, "maxLevel": 10},
-	"Tree2": {"xp": 0, "level": 1, "xpNextLevel": 100, "maxLevel": 10},
-	"Tree3": {"xp": 0, "level": 1, "xpNextLevel": 100, "maxLevel": 10},
+	"Tree1": {"id": 0, "name": "Tree 1", "xp": 0, "level": 1, "xpNextLevel": 100, "maxLevel": 10},
+	"Tree2": {"id": 1, "name": "Tree 2", "xp": 0, "level": 1, "xpNextLevel": 100, "maxLevel": 10},
+	"Tree3": {"id": 2, "name": "Tree 3", "xp": 0, "level": 1, "xpNextLevel": 100, "maxLevel": 10},
 }
-var select = "Tree1"
+var selected = "Tree1"
 
 func get_select_tree():
-	return trees[select]
+	return trees[selected]
+
+func find_tree_by_id(target_id: int) -> Dictionary:
+	for key in trees.keys():
+		var tree = trees[key]
+		if tree.id == target_id:
+			return {"key": key, "tree": tree}
+	return {}
 
 func set_selected_tree(name: String) -> void:
-	select = name
+	selected = name
 
 func add_xp() -> void:
 	var tree = get_select_tree()
@@ -32,4 +39,4 @@ func _check_level_up() -> void:
 
 func _on_level_up() -> void:
 	var tree = get_select_tree()
-	print(select, " subiu de nível! Novo nível: ", tree["level"])
+	print(selected, " subiu de nível! Novo nível: ", tree["level"])

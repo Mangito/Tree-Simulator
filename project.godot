@@ -17,6 +17,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
+GameStorage="*res://globals/GameStorage.gd"
 GameManager="*res://globals/GameManager.gd"
 Utils="*res://globals/Utils.gd"
 PlayerLS="*res://globals/LevelSystem/Player.gd"
