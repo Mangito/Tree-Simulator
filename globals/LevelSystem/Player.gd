@@ -20,10 +20,8 @@ func add_xp() -> void:
 
 func _check_level_up() -> void:
 	if xp >= xpNextLevel:
-		xp -= xpNextLevel
+		GameManager.coins += level
+		xp = 0
 		level += 1
 		xpNextLevel = Utils.calculate_xp_for_next_level(level)
-		_on_level_up()
-
-func _on_level_up() -> void:
-	print("Level Up! Current Level: ", level)
+		print("Level Up! Current Level: ", level)
