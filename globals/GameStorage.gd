@@ -1,6 +1,6 @@
 extends Node
 
-const SAVE_PATH = "user://savegame.json"
+const SAVE_PATH = "user://savegame.json" # C:\Users\username\AppData\Roaming\Godot\app_userdata\Tree Simulator
 
 func _ready() -> void:
 	load_progress()
@@ -10,7 +10,8 @@ func save_progress():
 	var data = {
 		"player": PlayerLS.get_data(),
 		"trees": TreeLS.trees,
-		"selectedTree": TreeLS.selected
+		"selectedTree": TreeLS.selected,
+		"coins": GameManager.coins,
 	}
 	
 	var file = FileAccess.open(SAVE_PATH, FileAccess.WRITE)
@@ -36,4 +37,5 @@ func load_progress():
 	PlayerLS.xp = data.player.xp
 	PlayerLS.level = data.player.level
 	PlayerLS.xpNextLevel = data.player.xpNextLevel
+	GameManager.coins = data.coins
 	
