@@ -10,7 +10,8 @@ func save_progress():
 	var data = {
 		"player": PlayerLS.get_data(),
 		"trees": TreeLS.trees,
-		"selectedTree": TreeLS.selected
+		"selectedTree": TreeLS.selected,
+		"settings": GameManager.settings,
 	}
 	
 	var file = FileAccess.open(SAVE_PATH, FileAccess.WRITE)
@@ -36,4 +37,5 @@ func load_progress():
 	PlayerLS.xp = data.player.xp
 	PlayerLS.level = data.player.level
 	PlayerLS.xpNextLevel = data.player.xpNextLevel
+	GameManager.settings = data.settings
 	

@@ -70,7 +70,7 @@ size_flags_vertical = 4
 layout_mode = 2
 text = "Language: "
 
-[node name="OptionButton" type="OptionButton" parent="ButtonsContainer/LanguageContainer"]
+[node name="LangOptionButton" type="OptionButton" parent="ButtonsContainer/LanguageContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
@@ -88,7 +88,7 @@ layout_mode = 2
 layout_mode = 2
 text = "Fullscreen:"
 
-[node name="CheckButton" type="CheckButton" parent="ButtonsContainer/FullScreenContainer"]
+[node name="FullScreenCheckButton" type="CheckButton" parent="ButtonsContainer/FullScreenContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
@@ -102,7 +102,7 @@ layout_mode = 2
 text = "Brightness:"
 horizontal_alignment = 1
 
-[node name="HSlider" type="HSlider" parent="ButtonsContainer/BrightnessContainer"]
+[node name="BrightSlider" type="HSlider" parent="ButtonsContainer/BrightnessContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
@@ -111,7 +111,7 @@ size_flags_vertical = 4
 layout_mode = 2
 text = "Back"
 
-[connection signal="item_selected" from="ButtonsContainer/LanguageContainer/OptionButton" to="." method="_on_option_button_item_selected"]
-[connection signal="toggled" from="ButtonsContainer/FullScreenContainer/CheckButton" to="." method="_on_check_button_toggled"]
-[connection signal="drag_ended" from="ButtonsContainer/BrightnessContainer/HSlider" to="." method="_on_h_slider_drag_ended"]
+[connection signal="item_selected" from="ButtonsContainer/LanguageContainer/LangOptionButton" to="." method="_on_option_button_item_selected"]
+[connection signal="toggled" from="ButtonsContainer/FullScreenContainer/FullScreenCheckButton" to="." method="_on_check_button_toggled"]
+[connection signal="drag_ended" from="ButtonsContainer/BrightnessContainer/BrightSlider" to="." method="_on_h_slider_drag_ended"]
 [connection signal="pressed" from="ButtonsContainer/BackButton" to="." method="_on_back_button_pressed"]
