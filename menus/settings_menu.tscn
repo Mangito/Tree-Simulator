@@ -56,11 +56,13 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -189.0
-offset_top = -99.0
+offset_top = -61.0
 offset_right = 189.0
-offset_bottom = 182.0
+offset_bottom = 61.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 
 [node name="LanguageContainer" type="HBoxContainer" parent="ButtonsContainer"]
 layout_mode = 2
@@ -93,19 +95,9 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
 
-[node name="BrightnessContainer" type="HBoxContainer" parent="ButtonsContainer"]
+[node name="HSeparator" type="HSeparator" parent="ButtonsContainer"]
 layout_mode = 2
-alignment = 1
-
-[node name="Label" type="Label" parent="ButtonsContainer/BrightnessContainer"]
-layout_mode = 2
-text = "BRIGHTNESS"
-horizontal_alignment = 1
-
-[node name="BrightSlider" type="HSlider" parent="ButtonsContainer/BrightnessContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 4
+theme_override_constants/separation = 24
 
 [node name="BackButton" type="Button" parent="ButtonsContainer"]
 layout_mode = 2
@@ -113,5 +105,4 @@ text = "BACK"
 
 [connection signal="item_selected" from="ButtonsContainer/LanguageContainer/LangOptionButton" to="." method="_on_lang_option_button_item_selected"]
 [connection signal="toggled" from="ButtonsContainer/FullScreenContainer/FullScreenCheckButton" to="." method="_on_full_screen_check_button_toggled"]
-[connection signal="value_changed" from="ButtonsContainer/BrightnessContainer/BrightSlider" to="." method="_on_bright_slider_value_changed"]
 [connection signal="pressed" from="ButtonsContainer/BackButton" to="." method="_on_back_button_pressed"]
