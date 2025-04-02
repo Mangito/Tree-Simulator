@@ -47,7 +47,7 @@ anchor_right = 1.0
 offset_top = 112.0
 offset_bottom = 230.0
 grow_horizontal = 2
-text = "Paused"
+text = "PAUSED"
 label_settings = SubResource("LabelSettings_s5kro")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -67,23 +67,23 @@ grow_vertical = 2
 
 [node name="PlayButton" type="Button" parent="ButtonsContainer"]
 layout_mode = 2
-text = "Play"
+text = "PLAY"
 
 [node name="ResumeButton" type="Button" parent="ButtonsContainer"]
 layout_mode = 2
-text = "Resume"
+text = "RESUME"
 
 [node name="SettingsButton" type="Button" parent="ButtonsContainer"]
 layout_mode = 2
-text = "Settings"
+text = "SETTINGS"
 
 [node name="BackButton" type="Button" parent="ButtonsContainer"]
 layout_mode = 2
-text = "Back"
+text = "BACK"
 
 [node name="QuitButton" type="Button" parent="ButtonsContainer"]
 layout_mode = 2
-text = "Quit"
+text = "QUIT"
 
 [node name="SettingsMenu" parent="." instance=ExtResource("2_y8e4h")]
 visible = false

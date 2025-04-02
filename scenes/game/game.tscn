@@ -16,7 +16,7 @@ offset_bottom = 175.0
 [node name="Title" type="Label" parent="UI/PlayerLevelUI"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
-text = "Player"
+text = "PLAYER"
 horizontal_alignment = 1
 
 [node name="PlayerLevelStatus" parent="UI/PlayerLevelUI" instance=ExtResource("2_xnews")]

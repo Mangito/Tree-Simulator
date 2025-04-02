@@ -38,13 +38,13 @@ label_settings = SubResource("LabelSettings_8g2cr")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="PausedLabel" type="Label" parent="."]
+[node name="SettingsLabel" type="Label" parent="."]
 anchors_preset = 10
 anchor_right = 1.0
 offset_top = 112.0
 offset_bottom = 230.0
 grow_horizontal = 2
-text = "Settings"
+text = "SETTINGS"
 label_settings = SubResource("LabelSettings_pvboe")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -68,7 +68,7 @@ size_flags_vertical = 4
 
 [node name="Label" type="Label" parent="ButtonsContainer/LanguageContainer"]
 layout_mode = 2
-text = "Language: "
+text = "LANGUAGE"
 
 [node name="LangOptionButton" type="OptionButton" parent="ButtonsContainer/LanguageContainer"]
 layout_mode = 2
@@ -86,7 +86,7 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="ButtonsContainer/FullScreenContainer"]
 layout_mode = 2
-text = "Fullscreen:"
+text = "FULLSCREEN"
 
 [node name="FullScreenCheckButton" type="CheckButton" parent="ButtonsContainer/FullScreenContainer"]
 layout_mode = 2
@@ -99,7 +99,7 @@ alignment = 1
 
 [node name="Label" type="Label" parent="ButtonsContainer/BrightnessContainer"]
 layout_mode = 2
-text = "Brightness:"
+text = "BRIGHTNESS"
 horizontal_alignment = 1
 
 [node name="BrightSlider" type="HSlider" parent="ButtonsContainer/BrightnessContainer"]
@@ -109,9 +109,9 @@ size_flags_vertical = 4
 
 [node name="BackButton" type="Button" parent="ButtonsContainer"]
 layout_mode = 2
-text = "Back"
+text = "BACK"
 
 [connection signal="item_selected" from="ButtonsContainer/LanguageContainer/LangOptionButton" to="." method="_on_lang_option_button_item_selected"]
 [connection signal="toggled" from="ButtonsContainer/FullScreenContainer/FullScreenCheckButton" to="." method="_on_full_screen_check_button_toggled"]
-[connection signal="drag_ended" from="ButtonsContainer/BrightnessContainer/BrightSlider" to="." method="_on_bright_slider_drag_ended"]
+[connection signal="value_changed" from="ButtonsContainer/BrightnessContainer/BrightSlider" to="." method="_on_bright_slider_value_changed"]
 [connection signal="pressed" from="ButtonsContainer/BackButton" to="." method="_on_back_button_pressed"]
