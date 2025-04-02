@@ -1,7 +1,12 @@
 extends Node
 
+enum LANGUAGES {
+	EN, 
+	PT, 
+}
+
 var settings = {
-	"language": 0,
+	"language": LANGUAGES.EN,
 	"fullscreen": false,
 	"brightness": 1,
 }

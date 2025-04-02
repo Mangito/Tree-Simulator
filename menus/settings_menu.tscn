@@ -111,7 +111,7 @@ size_flags_vertical = 4
 layout_mode = 2
 text = "Back"
 
-[connection signal="item_selected" from="ButtonsContainer/LanguageContainer/LangOptionButton" to="." method="_on_option_button_item_selected"]
-[connection signal="toggled" from="ButtonsContainer/FullScreenContainer/FullScreenCheckButton" to="." method="_on_check_button_toggled"]
-[connection signal="drag_ended" from="ButtonsContainer/BrightnessContainer/BrightSlider" to="." method="_on_h_slider_drag_ended"]
+[connection signal="item_selected" from="ButtonsContainer/LanguageContainer/LangOptionButton" to="." method="_on_lang_option_button_item_selected"]
+[connection signal="toggled" from="ButtonsContainer/FullScreenContainer/FullScreenCheckButton" to="." method="_on_full_screen_check_button_toggled"]
+[connection signal="drag_ended" from="ButtonsContainer/BrightnessContainer/BrightSlider" to="." method="_on_bright_slider_drag_ended"]
 [connection signal="pressed" from="ButtonsContainer/BackButton" to="." method="_on_back_button_pressed"]
