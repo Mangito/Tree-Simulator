@@ -38,8 +38,8 @@ Before anything, please read the [Project Best Practices](https://github.com/Man
 
 ## Technologies
 
-| Category       | Tools                                          |
-| -------------- | ---------------------------------------------- |
-| Game Engine/LP | Godot/GDScript (Current version: 4.1.3 Stable) |
-| VCS            | Git/GitHub                                     |
+| Category       | Tools                                        |
+| -------------- | -------------------------------------------- |
+| Game Engine/LP | Godot/GDScript (Current version: 4.4 Stable) |
+| VCS            | Git/GitHub                                   |
 

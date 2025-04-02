@@ -11,7 +11,6 @@ func _ready() -> void:
 	_populate_option_button()
 	
 	menu.visible = false
-	menu.setIsInGame(true)
 
 func _on_xp_timer_timeout() -> void:
 	PlayerLS.add_xp()

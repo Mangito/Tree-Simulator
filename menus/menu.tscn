@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://g3e0eodhl7xl"]
+[gd_scene load_steps=5 format=3 uid="uid://g3e0eodhl7xl"]
 
-[ext_resource type="Script" path="res://menus/menu.gd" id="1_uyh0y"]
+[ext_resource type="Script" uid="uid://d2xidwp1fu6bj" path="res://menus/menu.gd" id="1_uyh0y"]
+[ext_resource type="PackedScene" uid="uid://dns4isn3f1jrr" path="res://menus/settings_menu.tscn" id="2_y8e4h"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_mv1id"]
 font_size = 64
@@ -83,6 +84,9 @@ text = "Back"
 [node name="QuitButton" type="Button" parent="ButtonsContainer"]
 layout_mode = 2
 text = "Quit"
+
+[node name="SettingsMenu" parent="." instance=ExtResource("2_y8e4h")]
+visible = false
 
 [connection signal="pressed" from="ButtonsContainer/PlayButton" to="." method="_on_play_button_pressed"]
 [connection signal="pressed" from="ButtonsContainer/ResumeButton" to="." method="_on_resume_button_pressed"]
