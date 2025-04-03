@@ -1,14 +1,14 @@
-# FPS Game Security Policy
+# Tree Simulator Game Security Policy
 
 ## Reporting a Security Vulnerability
 
-At FPS Game, we take security seriously and value the contributions of security researchers and the community to help us maintain a secure project. If you discover a security vulnerability, we encourage you to report it to us as soon as possible. We will investigate all legitimate reports and do our best to quickly fix the issue.
+At Tree Simulator Game, we take security seriously and value the contributions of security researchers and the community to help us maintain a secure project. If you discover a security vulnerability, we encourage you to report it to us as soon as possible. We will investigate all legitimate reports and do our best to quickly fix the issue.
 
 To report a security vulnerability, please follow these steps:
 
-1. **Create a New Issue**: Go to the [Issues](https://github.com/Mangito/FPS/issues) tab of our GitHub repository and click "New Issue";
+1. **Create a New Issue**: Go to the [Issues](https://github.com/Mangito/Tree-Simulator/issues) tab of our GitHub repository and click "New Issue";
 
-2. **Use the Security Vulnerability Template**: To ensure the proper evaluation of the issue, use the provided ["Report a security vulnerability"](https://github.com/Mangito/FPS/security/advisories/new) template when creating the issue;
+2. **Use the Security Vulnerability Template**: To ensure the proper evaluation of the issue, use the provided ["Report a security vulnerability"](https://github.com/Mangito/Tree-Simulator/security/advisories/new) template when creating the issue;
 
 3. **Provide Details**: Be sure to provide as much information as possible, including a description of the vulnerability, steps to reproduce it, images/videos, and any relevant code or configurations;
 
@@ -33,4 +33,4 @@ As part of our commitment to security, we will regularly review and update our d
 
 We request that security researchers and reporters follow responsible disclosure principles by not disclosing the details of the vulnerability until we have addressed it. We will do our best to acknowledge your efforts and maintain open communication throughout the process.
 
-Thank you for helping to keep FPS Game secure!
+Thank you for helping to keep Tree Simulator Game secure!

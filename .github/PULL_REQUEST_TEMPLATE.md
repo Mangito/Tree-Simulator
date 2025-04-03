@@ -1,5 +1,3 @@
-<!-- Read this before opening this PR: https://github.com/Mangito/Tree-Simulator/wiki/ProjectBestPractices#pull-requests -->
-
 ### Description
 
 N/A.
