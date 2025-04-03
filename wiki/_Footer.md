@@ -1,1 +1,0 @@
-[Mangito - FPS](https://github.com/Mangito/FPS)
