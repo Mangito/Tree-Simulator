@@ -6,9 +6,8 @@ enum LANGUAGES {
 }
 
 var coins = 0
-
 var settings = {
-	"language": LANGUAGES.EN,
+	"language": "EN",
 	"fullscreen": false,
 }
 

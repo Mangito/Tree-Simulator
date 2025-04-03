@@ -1,8 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dkufj4sv64avp"]
 
 [ext_resource type="Script" uid="uid://d37a6aqva6idi" path="res://scenes/game/game.gd" id="1_b8j6q"]
-[ext_resource type="PackedScene" uid="uid://2fuwpxsgv6ok" path="res://scenes/level_ui/level_ui.tscn" id="2_xnews"]
-[ext_resource type="Script" path="res://scenes/game/game.gd" id="1_b8j6q"]
 [ext_resource type="PackedScene" uid="uid://cvcpo1lcpdoyt" path="res://scenes/level_ui/player_level_ui.tscn" id="2_gtdlk"]
 [ext_resource type="PackedScene" uid="uid://g3e0eodhl7xl" path="res://menus/menu.tscn" id="3_gr4f4"]
 [ext_resource type="PackedScene" uid="uid://coxcqmcg3kk6h" path="res://scenes/level_ui/tree_level_ui.tscn" id="3_wclvw"]
@@ -25,16 +23,7 @@ offset_bottom = 146.0
 grow_horizontal = 1
 grow_vertical = 1
 
-[node name="Title" type="Label" parent="UI/PlayerLevelUI"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 24
-text = "PLAYER"
-horizontal_alignment = 1
-
-[node name="PlayerLevelStatus" parent="UI/PlayerLevelUI" instance=ExtResource("2_xnews")]
-layout_mode = 2
-
-[node name="TreeLevelUI" type="VBoxContainer" parent="UI" instance=ExtResource("3_wclvw")]
+[node name="TreeLevelUI" parent="UI" instance=ExtResource("3_wclvw")]
 anchors_preset = 1
 anchor_left = 1.0
 anchor_top = 0.0

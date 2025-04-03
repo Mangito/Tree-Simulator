@@ -40,4 +40,3 @@ func load_progress():
 	PlayerLS.xpNextLevel = data.player.xpNextLevel
 	GameManager.settings = data.settings
 	GameManager.coins = data.coins
-	

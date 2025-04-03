@@ -10,3 +10,4 @@ FULLSCREEN,Full screen:,Ecrã inteiro:
 BRIGHTNESS,Brightness:,Brilho:
 PLAYER,Player,Jogador
 LEVEL,Level: {level},Nivel: {level}
+COINS,Coins: {coins},Moedas: {coins}
