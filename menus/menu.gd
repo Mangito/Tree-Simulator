@@ -4,7 +4,6 @@ extends CanvasLayer
 
 @onready var settings_menu: CanvasLayer = $SettingsMenu
 
-
 func _ready() -> void:
 	# Visible on Main Menu
 	$ButtonsContainer/PlayButton.visible = !isInGame
