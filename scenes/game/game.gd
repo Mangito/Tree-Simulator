@@ -9,7 +9,6 @@ func _ready() -> void:
 	_update_ui()
 	
 	menu.visible = false
-	menu.setIsInGame(true)
 
 func _on_xp_timer_timeout() -> void:
 	PlayerLS.add_xp()

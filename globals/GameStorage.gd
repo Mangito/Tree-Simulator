@@ -11,6 +11,7 @@ func save_progress():
 		"player": PlayerLS.get_data(),
 		"trees": TreeLS.trees,
 		"selectedTree": TreeLS.selected,
+		"settings": GameManager.settings,
 		"coins": GameManager.coins,
 	}
 	
@@ -37,5 +38,5 @@ func load_progress():
 	PlayerLS.xp = data.player.xp
 	PlayerLS.level = data.player.level
 	PlayerLS.xpNextLevel = data.player.xpNextLevel
+	GameManager.settings = data.settings
 	GameManager.coins = data.coins
-	

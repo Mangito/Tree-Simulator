@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dkufj4sv64avp"]
 
-[ext_resource type="Script" path="res://scenes/game/game.gd" id="1_b8j6q"]
+[ext_resource type="Script" uid="uid://d37a6aqva6idi" path="res://scenes/game/game.gd" id="1_b8j6q"]
 [ext_resource type="PackedScene" uid="uid://cvcpo1lcpdoyt" path="res://scenes/level_ui/player_level_ui.tscn" id="2_gtdlk"]
 [ext_resource type="PackedScene" uid="uid://g3e0eodhl7xl" path="res://menus/menu.tscn" id="3_gr4f4"]
 [ext_resource type="PackedScene" uid="uid://coxcqmcg3kk6h" path="res://scenes/level_ui/tree_level_ui.tscn" id="3_wclvw"]
@@ -41,5 +41,6 @@ autostart = true
 
 [node name="Menu" parent="." instance=ExtResource("3_gr4f4")]
 visible = false
+isInGame = true
 
 [connection signal="timeout" from="XP_Timer" to="." method="_on_xp_timer_timeout"]

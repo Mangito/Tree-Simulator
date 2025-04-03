@@ -18,7 +18,7 @@ func _start() -> void:
 	pass
 
 func update_ui(level: int, current_xp: int, max_xp: int) -> void:
-	level_label.text = "Level: " + str(level)
+	level_label.text = tr("LEVEL").format({ "level": str(level) })
 	xp_label.text = "XP: " + str(current_xp) + " / " + str(max_xp)
 	level_progress_bar.value = current_xp
 	level_progress_bar.max_value = max_xp

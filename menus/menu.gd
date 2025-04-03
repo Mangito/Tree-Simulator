@@ -1,10 +1,10 @@
 extends CanvasLayer
 
-var isInGame: bool = false
+@export var isInGame: bool = false
 
-func setIsInGame(value: bool = false) -> void:
-	isInGame = value
-	
+@onready var settings_menu: CanvasLayer = $SettingsMenu
+
+func _ready() -> void:
 	# Visible on Main Menu
 	$ButtonsContainer/PlayButton.visible = !isInGame
 	$ButtonsContainer/QuitButton.visible = !isInGame
@@ -13,9 +13,6 @@ func setIsInGame(value: bool = false) -> void:
 	$ButtonsContainer/ResumeButton.visible = isInGame
 	$ButtonsContainer/BackButton.visible = isInGame
 	$PausedLabel.visible = isInGame
-
-func _ready() -> void:
-	setIsInGame()
 
 func _input(event):
 	if event.is_action_released("ui_cancel") and isInGame:
@@ -37,7 +34,7 @@ func _on_resume_button_pressed() -> void:
 	_resume()
 
 func _on_settings_button_pressed() -> void:
-	print("Settings")
+	settings_menu.show()
 
 func _on_back_button_pressed() -> void:
 	get_tree().paused = false
