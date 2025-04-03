@@ -19,7 +19,7 @@ Before you start contributing to Tree Simulator Game, please make sure you have:
 
 - A GitHub account;
 - Familiarity with Godot Engine;
-- Read and understood our [Code of Conduct](CODE_OF_CONDUCT.md) and [Project Best Practices](https://github.com/Mangito/Tree-Simulator/wiki/ProjectBestPractices);
+- Read and understood our [Code of Conduct](https://github.com/Mangito/Tree-Simulator/blob/main/CODE_OF_CONDUCT.md);
 
 ## Reporting Bugs
 
@@ -36,26 +36,23 @@ Have an idea for a new feature or improvement? We encourage you to discuss it wi
 1. Fork the [repository](https://github.com/Mangito/Tree-Simulator/) to your own GitHub account;
 2. Clone your fork to your local machine;
 3. Set up the Godot project using the Godot 4 version;
-4. Create a new branch for your contribution: `git checkout -b 123-my-issue-title`, [check here for branch name convention](https://github.com/Mangito/Tree-Simulator/wiki/ProjectBestPractices#branch-naming-convention);
+4. Create a new branch for your contribution: `git checkout -b 123-my-issue-title`;
 5. Make your changes, test them thoroughly, and ensure they adhere to the project's code style;
 
 ### Code Style
 
-Please follow our [Coding Guidelines/Code Styles](https://github.com/Mangito/Tree-Simulator/wiki/ProjectBestPractices#code-styles) to maintain consistency in the codebase. We recommend using Godot's scripting language best practices and adhering to the GDScript style guide.
+Please follow standard Coding Guidelines/Code Styles to maintain consistency in the codebase. We recommend using Godot's scripting language best practices and adhering to the GDScript style guide.
 
 ### Submitting a Pull Request
 
 1. Ensure your changes are on a feature branch, not the `main` branch;
-2. Commit your changes with clear and concise messages, [check here commit message convections](https://github.com/Mangito/Tree-Simulator/wiki/ProjectBestPractices#commit-message-convections);
-3. Push your branch to your GitHub fork: `git push origin 123-my-issue-title`, [check here for branch name convention](https://github.com/Mangito/Tree-Simulator/wiki/ProjectBestPractices#branch-naming-convention);
-4. Create a Pull Request (PR) from your branch to the `main` project repository, [Check here for pull request best practices](https://github.com/Mangito/Tree-Simulator/wiki/ProjectBestPractices#pull-requests);
+2. Commit your changes with clear and concise messages;
+3. Push your branch to your GitHub fork: `git push origin 123-my-issue-title`;
+4. Create a Pull Request (PR) from your branch to the `main` project repository;
 6. Our team will review your PR, offer feedback, and merge it if it meets our guidelines;
 
 ## Community and Communication
 
-We value your feedback and contributions to Tree Simulator Game. If you have questions or need help, please don't hesitate to reach out:
-
-- You can engage in conversations on the [Github Discussions/Forum](https://github.com/Mangito/Tree-Simulator/discussions);
-- Or in [GitHub Issues](https://github.com/Mangito/Tree-Simulator/issues);
+We value your feedback and contributions to Tree Simulator Game. If you have questions or need help, please don't hesitate to reach in conversations on [GitHub Issues](https://github.com/Mangito/Tree-Simulator/issues);
 
 Thank you for considering contributing to Tree Simulator Game. Your help is greatly appreciated, and it will contribute to making our game a success, and you will forever be in our hearts and on the list of contributors.
