@@ -3,9 +3,9 @@ extends Node
 const XP_PER_SECOND: int = 5
 
 var trees = {
-	"Tree1": {"id": 0, "name": "Tree 1", "xp": 0, "level": 1, "xpNextLevel": 100, "maxLevel": 3},
-	"Tree2": {"id": 1, "name": "Tree 2", "xp": 0, "level": 1, "xpNextLevel": 100, "maxLevel": 5},
-	"Tree3": {"id": 2, "name": "Tree 3", "xp": 0, "level": 1, "xpNextLevel": 100, "maxLevel": 10},
+	"Tree1": {"id": 0, "name": "Tree 1", "xp": 0, "level": 1, "xpNextLevel": 100, "maxLevel": 3, "asset": "res://assets/trees/deciduous/Tree_small_regular.dae"},
+	"Tree2": {"id": 1, "name": "Tree 2", "xp": 0, "level": 1, "xpNextLevel": 100, "maxLevel": 5, "asset": "res://assets/trees/deciduous/Tree_average_regular.dae"},
+	"Tree3": {"id": 2, "name": "Tree 3", "xp": 0, "level": 1, "xpNextLevel": 100, "maxLevel": 10, "asset": "res://assets/trees/deciduous/Tree_average_lush.dae"},
 }
 var selected = "Tree1"
 
