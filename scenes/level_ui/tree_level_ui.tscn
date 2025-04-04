@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://coxcqmcg3kk6h"]
 
 [ext_resource type="PackedScene" uid="uid://2fuwpxsgv6ok" path="res://scenes/level_ui/level_ui.tscn" id="1_qqi3e"]
-[ext_resource type="Script" uid="uid://bmueisqvkaf7a" path="res://scenes/level_ui/tree_level_ui.gd" id="2_x5rsr"]
+[ext_resource type="Script" uid="uid://b0rswcv2lw0vc" path="res://scenes/level_ui/tree_level_ui.gd" id="2_x5rsr"]
 
 [node name="TreeLevelUI" instance=ExtResource("1_qqi3e")]
 script = ExtResource("2_x5rsr")

@@ -3,9 +3,9 @@ extends Node
 const XP_PER_SECOND: int = 5
 
 var trees = {
-	"Tree1": {"id": 0, "name": "Tree 1", "xp": 0, "level": 1, "xpNextLevel": 100, "maxLevel": 3, "asset": "res://assets/trees/deciduous/Tree_small_regular.dae"},
-	"Tree2": {"id": 1, "name": "Tree 2", "xp": 0, "level": 1, "xpNextLevel": 100, "maxLevel": 5, "asset": "res://assets/trees/deciduous/Tree_average_regular.dae"},
-	"Tree3": {"id": 2, "name": "Tree 3", "xp": 0, "level": 1, "xpNextLevel": 100, "maxLevel": 10, "asset": "res://assets/trees/deciduous/Tree_average_lush.dae"},
+	"Tree1": {"id": 0, "name": "Tree 1", "xp": 0, "level": 1, "xpNextLevel": 100, "maxLevel": 3, "asset": "Tree_small_regular"},
+	"Tree2": {"id": 1, "name": "Tree 2", "xp": 0, "level": 1, "xpNextLevel": 100, "maxLevel": 5, "asset": "Tree_average_regular"},
+	"Tree3": {"id": 2, "name": "Tree 3", "xp": 0, "level": 1, "xpNextLevel": 100, "maxLevel": 10, "asset": "Tree_average_lush"},
 }
 var selected = "Tree1"
 
@@ -21,6 +21,7 @@ func find_tree_by_id(target_id: int) -> Dictionary:
 
 func set_selected_tree(name: String) -> void:
 	selected = name
+	GameManager.update_tree_model(null)
 
 func add_xp() -> void:
 	var tree = get_select_tree()
