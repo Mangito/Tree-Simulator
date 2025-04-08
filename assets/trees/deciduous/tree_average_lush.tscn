@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://ct1l7cl3hi7tj"]
+
+[ext_resource type="PackedScene" uid="uid://cyv5o5agvq36j" path="res://assets/trees/deciduous/Tree_average_lush.dae" id="1_06837"]
+
+[node name="Tree_average_lush" instance=ExtResource("1_06837")]
+
+[node name="Tree_average_lush" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)

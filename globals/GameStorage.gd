@@ -3,7 +3,7 @@ extends Node
 const SAVE_PATH = "user://savegame.json" # C:\Users\username\AppData\Roaming\Godot\app_userdata\Tree Simulator
 
 func _ready() -> void:
-	load_progress()
+	load_progress() #load is currently overlappinng with new changes made with the game data
 	save_progress()
 
 func save_progress():

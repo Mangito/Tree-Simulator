@@ -1,12 +1,31 @@
-[gd_scene load_steps=5 format=3 uid="uid://dkufj4sv64avp"]
+[gd_scene load_steps=8 format=3 uid="uid://dkufj4sv64avp"]
 
 [ext_resource type="Script" uid="uid://d37a6aqva6idi" path="res://scenes/game/game.gd" id="1_b8j6q"]
+[ext_resource type="PackedScene" uid="uid://b10jdbvl4rn2j" path="res://assets/trees/deciduous/tree_small_regular.tscn" id="2_bdhmt"]
 [ext_resource type="PackedScene" uid="uid://cvcpo1lcpdoyt" path="res://scenes/level_ui/player_level_ui.tscn" id="2_gtdlk"]
+[ext_resource type="PackedScene" uid="uid://7wk2c4pmkcch" path="res://assets/trees/deciduous/tree_average_regular.tscn" id="3_87uf6"]
 [ext_resource type="PackedScene" uid="uid://g3e0eodhl7xl" path="res://menus/menu.tscn" id="3_gr4f4"]
 [ext_resource type="PackedScene" uid="uid://coxcqmcg3kk6h" path="res://scenes/level_ui/tree_level_ui.tscn" id="3_wclvw"]
+[ext_resource type="PackedScene" uid="uid://ct1l7cl3hi7tj" path="res://assets/trees/deciduous/tree_average_lush.tscn" id="4_2a8rs"]
 
 [node name="Game" type="Node3D"]
 script = ExtResource("1_b8j6q")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -95.8511, 272.965, 39.2698)
+
+[node name="TreeParent" type="Node3D" parent="."]
+process_priority = 1
+
+[node name="Tree_small_regular" parent="TreeParent" instance=ExtResource("2_bdhmt")]
+
+[node name="Tree_average_regular" parent="TreeParent" instance=ExtResource("3_87uf6")]
+
+[node name="Tree_average_lush" parent="TreeParent" instance=ExtResource("4_2a8rs")]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 13.9615, 7.69911, 0)
+current = true
 
 [node name="UI" type="CanvasLayer" parent="."]
 

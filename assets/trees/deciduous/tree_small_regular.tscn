@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b10jdbvl4rn2j"]
+
+[ext_resource type="PackedScene" uid="uid://c32m45801vay8" path="res://assets/trees/deciduous/Tree_small_regular.dae" id="1_xa7b1"]
+
+[node name="Tree_small_regular" instance=ExtResource("1_xa7b1")]
+
+[node name="Tree_small_regular" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
